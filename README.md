@@ -14,6 +14,6 @@ User management app made with Flask
 ## Getting started
 
 	- docker-compose build
-	- docker-up -d
+	- docker-compose up -d
 
 Go to your localhost:5000
