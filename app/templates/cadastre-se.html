@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block title %}
+Cadastre-se
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <form class="row g-3 mx-auto" action="" method="POST">
+        {{ form.csrf_token }}
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Nome</label>
+                {{ form.nome(required=True, class="form-control", placeholder="Fulano") }}
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Sobrenome</label>
+                {{ form.sobrenome(required=True, class="form-control", placeholder="De Tal") }}
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="form-group">
+                <label>E-mail</label>
+                {{ form.email(required=True, class="form-control", placeholder="email@email.com") }}
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Telefone</label>
+                {{ form.telefone(required=True, class="form-control", placeholder="Telefone") }}
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Nacionalidade</label>
+                {{ form.nacionalidade(required=True, class="form-control", placeholder="Nacionalidade") }}
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group">
+                <label>CPF</label>
+                {{ form.cpf(required=True, class="form-control", placeholder="000.000.000-00") }}
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group">
+                <label>CEP</label>
+                {{ form.cep(required=True, class="form-control", placeholder="00000-000") }}
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Estado</label>
+                {{ form.estado(required=True, class="form-control", placeholder="Estado") }}
+            </div>
+        </div>
+
+        <script charset="utf-8" src="{{ url_for('static', filename='/js/consulta_cep.js') }}"></script>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Cidade</label>
+                {{ form.cidade(required=True, class="form-control", placeholder="Cidade") }}
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Logradouro</label>
+                {{ form.logradouro(required=True, class="form-control", placeholder="Seu endereço") }}
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Nome de usuário</label>
+                {{ form.username(required=True, class="form-control", placeholder="fulanodetal") }}
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Senha</label>
+                {{ form.password(required=True, class="form-control", placeholder="********") }}
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Confirme a senha</label>
+                {{ form.confirm(required=True, class="form-control", placeholder="********") }}
+            </div>
+        </div>
+        
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-primary">Cadastrar-se</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
