@@ -21,18 +21,18 @@ You can use Docker Compose
 
 OR
 
-_The commands here are for Linux, if you're running other OS, I recommend using Docker Compose or searching for your specific context_
+_The commands here are for Linux, if you're running other OS, I'd recommend using Docker Compose or searching for your specific context_
 
 	Activate the venv
-	`. venv/bin/activate`
-	`pip install -r requirements.txt`
+	- `. venv/bin/activate`
+	- `pip install -r requirements.txt`
 
 ## Usage
-	`docker-compose up -d`
+	- `docker-compose up -d`
 
 OR
 
-	`python run.py runserver`
+	- `python run.py runserver`
 
 Then
 
