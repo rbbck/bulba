@@ -17,7 +17,7 @@ User management app made with Python, HTML, CSS and Js
 ## Installation
 You can use Docker Compose
 
-- Building app `docker-compose build`
+- `docker-compose build`
 
 OR
 
@@ -35,4 +35,4 @@ OR
 
 Then
 
-Go to your localhost:5000
+Go to your [localhost:5000](localhost:5000)
