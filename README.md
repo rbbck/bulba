@@ -12,7 +12,7 @@ User management app made with Python, HTML, CSS and Js
 - WTForms: Forms validation and rendering
 - Werkzeug: Security related validations
 - Bootstrap: Frontend toolkit for styling purposes
-- [![Inputmask]](https://github.com/RobinHerbots/Inputmask)]: For masking the form inputs and rendering the data with the correct format
+- [Inputmask](https://github.com/RobinHerbots/Inputmask): For masking the form inputs and rendering the data with the correct format
 
 ## Installation
 You can use Docker Compose
@@ -23,17 +23,17 @@ OR
 
 _The commands here are for Linux, if you're running other OS, I recommend using Docker Compose or searching for your specific context_
 
-	- Activate the venv
-	- . venv/bin/activate
-	- pip install -r requirements.txt
+	Activate the venv
+	. venv/bin/activate
+	pip install -r requirements.txt
 
 ## Usage
-	- docker-compose up -d
+	docker-compose up -d
 
 OR
 
-	- python run.py runserver
+	python run.py runserver
 
 Then
 
-	- Go to your localhost:5000
+	Go to your localhost:5000
